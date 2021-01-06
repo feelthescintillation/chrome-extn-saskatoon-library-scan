@@ -1,6 +1,8 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+const WebpackDistZip = require("webpack-dist-zip");
+
 const WriteFilePlugin = require("write-file-webpack-plugin");
 const webpack = require("webpack");
 const path = require("path");
@@ -19,7 +21,7 @@ const options = {
     popup: path.join(__dirname, "src", "popup", "popup.js"),
   },
   output: {
-    //  path: path.resolve(__dirname, "./dist"),
+    path: path.resolve(__dirname, "./dist"),
     filename: "[name].js",
   },
   plugins: [
@@ -74,6 +76,15 @@ const options = {
 module.exports = (env, argv) => {
   if (argv.mode === "development") {
     options.devtool = "source-map";
+  } else {
+    //prod
+    options.plugins.push(
+      new WebpackDistZip({
+        // default
+        entry: "./dist",
+        output: "./dist/prod.zip",
+      })
+    );
   }
   return options;
 };
