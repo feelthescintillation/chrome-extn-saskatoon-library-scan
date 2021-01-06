@@ -4,11 +4,7 @@
   "description": "Extension to search Books in Saskatoon Public Library with selected text on active tabs",
 
   "manifest_version": 2,
-  "permissions": [
-    "activeTab",
-    "https://*.goodreads.com/",
-    "https://*.saskatoonlibrary.ca/"
-  ],
+  "permissions": ["activeTab", "https://*.saskatoonlibrary.ca/"],
   "browser_action": {
     "default_popup": "src/popup/popup.html",
     "default_icon": {
