@@ -1,0 +1,23 @@
+{
+  "name": "Saskatoon Public Library Search",
+  "version": "1.0",
+  "description": "Extension to search Books in Saskatoon Public Library with selected text on active tabs",
+
+  "manifest_version": 2,
+  "permissions": ["activeTab", "https://*.saskatoonlibrary.ca/"],
+  "browser_action": {
+    "default_popup": "src/popup/popup.html",
+    "default_icon": {
+      "16": "src/assets/logo.png",
+      "32": "src/assets/logo.png",
+      "48": "src/assets/logo.png",
+      "128": "src/assets/logo.png"
+    }
+  },
+  "icons": {
+    "16": "src/assets/logo.png",
+    "32": "src/assets/logo.png",
+    "48": "src/assets/logo.png",
+    "128": "src/assets/logo.png"
+  }
+}

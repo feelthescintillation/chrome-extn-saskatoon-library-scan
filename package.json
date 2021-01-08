@@ -1,0 +1,40 @@
+{
+  "name": "chrome-extn-saskatoon-library-scan",
+  "version": "1.0.0",
+  "description": "Chrome Extension to search Saskatoon Public Library (SPL)",
+  "main": "background.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feelthescintillation/chrome-extn-saskatoon-library-scan"
+  },
+  "keywords": [
+    "Saskatoon",
+    "Saskatoon",
+    "Public",
+    "Library",
+    "Book",
+    "search",
+    "GoodReads"
+  ],
+  "author": "Sijeesh Joshi (github.com/feelthescintillation)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/feelthescintillation/chrome-extn-saskatoon-library-scan/issues"
+  },
+  "homepage": "https://github.com/feelthescintillation/chrome-extn-saskatoon-library-scan#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^7.0.0",
+    "html-webpack-plugin": "^5.0.0-beta.4",
+    "jquery": "^3.5.1",
+    "webpack": "^5.11.1",
+    "webpack-cli": "^4.3.1",
+    "webpack-dist-zip": "^1.1.2",
+    "write-file-webpack-plugin": "^4.5.1"
+  }
+}

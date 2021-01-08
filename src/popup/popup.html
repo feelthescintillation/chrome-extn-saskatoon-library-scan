@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello</title>
+    <style>
+      body {
+        width: 400px;
+        height: 500px;
+      }
+      .header {
+        background-image: url(./assets/header.png);
+        background-repeat: no-repeat;
+        width: 19rem;
+        margin: auto;
+        height: 5rem;
+      }
+      .SearchResult {
+        border: 2px solid gold;
+        padding: 5px;
+        margin-top: 20px;
+      }
+      .static-text {
+        font-size: 1.1rem;
+        margin-top: 5px;
+      }
+      .SearchFilters__total {
+        font-size: 1.5rem;
+      }
+      .SearchResultInfo__availability {
+        font-weight: bold;
+      }
+      .SearchResultInfo__controls {
+        display: none;
+      }
+      .SearchResultInfo__meta {
+        margin-top: 10px;
+      }
+      .no-selection {
+        display: none;
+      }
+      i.fa-book::before {
+        content: "📖";
+      }
+      i.fa-headphones::before {
+        content: "🎧";
+      }
+      i.fa-compact-disc::before {
+        content: "💿";
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header"></div>
+    <div class="no-selection">
+      Please select a text to search Saskatoon Public Library.
+    </div>
+    <div class="result-count"></div>
+    <div class="static-text"></div>
+    <div class="frame"></div>
+  </body>
+</html>
